@@ -23,12 +23,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Vega Lite Homework 6 Project">
-  <meta property="og:description" content="This is a Homework 6 project that uses vega-lite for interactive viz!">
-  <meta property="og:image" content="assets/pngs/visualization.png">
+  <meta property="og:title" content="Vega Lite Homework 6(Static Plot) Project">
+  <meta property="og:description" content="This is a Homework 6 project that uses vega-lite for static viz!">
+  <meta property="og:image" content="assets/pngs/static.png">
 
-  <title>Vega Lite Homework 6 Project</title>
-  <meta name="description" content="This is a Homework 6 project that uses vega-lite for interactive viz!">
+  <title>Vega Lite Homework 6(Static Plot) Project</title>
+  <meta name="description" content="This is a Homework 6 project that uses vega-lite for static viz!">
 
   <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
 
@@ -81,16 +81,13 @@
 
 <p>We can use a vegachart HTML tag like so:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;vegachart schema-url="/assets/json/visualization.json" style="width: 100%"&gt;&lt;/vegachart&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;vegachart schema-url="/assets/json/static.json" style="width: 100%"&gt;&lt;/vegachart&gt;
 </code></pre></div></div>
 
-<vegachart schema-url="/assets/json/visualization.json" style="width: 100%"></vegachart>
+<vegachart schema-url="/assets/json/static.json" style="width: 100%"></vegachart>
 
-<p>Plot 2: Interactive Scatter Plot of License Types (Binned)
-This scatter plot investigates the number of licenses binned versus their original values, adding an extra layer of interactivity by license type. The x-axis has license numbers binned into 20 segments, while the y-axis is the original license numbers. Each point is colored by the license type, which helps in differentiating these different categories. Everything outside the chosen filter is grayed out so that the visualization shows only the interesting subset of data. Tooltips add more information, like license numbers and types, also an ID, which gives more insight to the exploration. Data Preparation: Correct errors in the License Number column by converting invalid values to NaN, dropping rows containing invalid values, and ensuring the column was of integer type. A sample of 500 rows was also taken so that the visualization is manageable to view. Binning has been applied to systematically group license numbers, making this a clearer and more accessible visualization.</p>
-
-<p>Discussion of Interactivity
-This is the interactive scatter plot that adds so much to its clarity and appeal. Filtering by specific license types is made enabled through the dropdown menu option, thus helping in focusing on certain categorical groups. The brush selection allows users to highlight specific regions in the data, which makes it easier to see certain trends or patterns that aren’t readily apparent. The combination of interactivity added in here makes the visualization even more dynamic, showing users more effectively the deeper insights into the dataset’s relationships.</p>
+<p>Plot 1: Degree Distribution Plot (Static Plot)
+This bar chart visualizes the distribution of license counts among the users, focusing only on licensed users with more than one license. The x-axis is used to represent the binned numerical values of license counts, categorized into uniform intervals or bins for simplifying the graph in order to show patterns existing in data. The y-axis is used to represent the count of users falling into each bin, thus showing license distribution across individuals. A limited color scheme of steel blue was chosen to retain clarity without distraction. The data was transformed by grouping the records on user names and calculating the total number of licenses held by each user, then filtering out those users who hold only one license; this will ensure that analysis produces nonspurious trends in the data.</p>
 
 <h2 id="search-the-data--methods">Search The Data &amp; Methods</h2>
 

@@ -1,5 +1,5 @@
 ---
-name: Vega Lite Homework 6.1 (Plot 1) Project
+name: Vega Lite Homework 6(Static Plot) Project
 tools: [Python, HTML, vega-lite]
 image: assets/pngs/static.png
 description: This is a Homework 6 project that uses vega-lite for static viz!
