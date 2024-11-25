@@ -35,5 +35,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "rexml", ">= 3.3.2"
 
+gem "github-pages", group: :jekyll_plugins
 
 
